@@ -1,5 +1,6 @@
 ---
 - hosts: nodegrp
+  become: true
   vars:
     continents: [Africa, Asia, South America, North America, Europe]
 
