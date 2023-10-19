@@ -1,10 +1,14 @@
 ---
 - hosts: nodegrp
   become: true
-  vars:
-    continents: [Africa, Asia, South America, North America, Europe]
-
   tasks:
-  - name: Ansible List variable Example
+  - name: task1
     debug:
-      msg: "{{ continents [1] }}"
+      msg: " Hello task1 executed!!!"
+  - name: task2
+    debug:
+      msg: " Hello task2 executed!!!"
+  - name: task3
+    debug:
+      msg: " Hello task3 executed!!!"
+
